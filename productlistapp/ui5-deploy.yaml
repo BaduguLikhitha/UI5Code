@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: sap.ui5.ss.product.productlistapp
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: S4H1909
+          url: http://s4hana.ides.com:9222
+        app:
+          name: ZZZSAPPRODUCT
+          description: SAP Products
+          package: $tmp
+          transport: ""
+        exclude:
+          - /test/

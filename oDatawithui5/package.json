@@ -1,0 +1,14 @@
+{
+  "name": "dynamicfragments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/ux-ui5-tooling": "^1.11.3"
+  }
+}

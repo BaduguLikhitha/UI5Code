@@ -1,0 +1,14 @@
+specVersion: '3.1'
+metadata:
+  name: dynamicfragments
+type: application
+server:
+ customMiddleware:
+   - name: fiori-tools-proxy
+     afterMiddleware: compression
+     configuration:
+      backend:
+      - path: /sap/opu/odata/
+        url:  http://183.82.1.220:9222/
+        scp: true
+
