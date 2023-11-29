@@ -4,5 +4,6 @@
 
     <Input id="idInput" width="50%" maxLength="60"></Input>
     <Button id="idBtn" press="onClick" text="Display input data"></Button>
+    <Button id="idBtn1"  text="Button2"></Button>
 
 </mvc:View>
