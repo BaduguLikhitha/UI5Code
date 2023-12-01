@@ -1,6 +1,0 @@
-<mvc:View xmlns="sap.m"
-xmlns:mvc="sap.ui.core.mvc"
-controllerName="sap.ui5.ss.product.productlistapp.view1">
-<Button text="Buttonn1" press="onPress"></Button>
-
-</mvc:View>
