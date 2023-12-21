@@ -1,0 +1,9 @@
+{
+"sap.app":{
+
+    "id":"sapui5",
+    "description":"SAP Application"
+
+}
+}
+
