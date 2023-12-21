@@ -67,10 +67,12 @@ sap.ui.define([
                 success: function(data){
                     oJsonModel.setProperty("/ProductSet",data);
                     MessageBox.success("Data loaded successfully");
+                    //MessageToast.show("data loaded successfully");
+
                 },
                 error: function(ErrorMsg){
                     MessageBox.error(JSON.parse(ErrorMsg.responseText).error.innererror.errordetails[0].message);
-
+//MessageToast.show("data not loaded successfully");
                 }
      });
      var sImagePath = 
