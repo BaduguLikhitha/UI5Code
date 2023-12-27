@@ -1,0 +1,13 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:mvc ="sap.ui.core.mvc"
+xmlns="sap.m"
+controllerName="root.controller.main">
+
+<form:SimpleForm title="studentDetails" >
+<form:content>
+<Label id="idlabel" text="studentName"></Label>
+<Input id="idinput"></Input>
+<Button text="showinput" press="onClick"></Button>
+</form:content>
+</form:SimpleForm>
+
+</mvc:View>
