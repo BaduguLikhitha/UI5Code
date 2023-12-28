@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <!-- BootstrapArea -->
+    <script id="sap-ui-bootstrap"
+    src="https://ui5.sap.com/resources/sap-ui-core.js"
+    data-sap-ui-libs="sap.m"
+    data-sap-ui-theme="sap_fiori_3_dark"
+    data-sap-ui-resourceroots='{
+        "root":"./"
+    }'>
+    </script>
+    <script>
+        var oview = new sap.ui.view("idview",{
+            viewName : "root.view.layout",
+            type : "XML"
+        });
+        oview.placeAt("Canvas");
+
+    </script>
+
+
+</head>
+
+<body class= "ui5body">
+    <div id = "Canvas"></div>
+
+</body>
+
+</html>
