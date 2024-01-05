@@ -6,8 +6,6 @@ sap.ui.define([
         createJsonModel: function(filepath){
             // var oModel = new sap.ui.model.json.JSONModel( ); 
             var oModel = new oJSONModel;
-            oModel.setDefaultBindingMode(sap.ui.model.BindingMode.OneWay);
-            
             
             // oModel.setData();
             oModel.loadData(filepath);  

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+   <studentData>
+      <class>9</class>
+      <gender>M</gender>
+      <id>ID9999</id>
+      <marks>970</marks>
+      <name>Mr Raj</name>
+   </studentData>
+   <studentRecords>
+      <row>
+         <class>10</class>
+         <gender>M</gender>
+         <id>10001</id>
+         <marks>300</marks>
+         <name>Mr A</name>
+      </row>
+      <row>
+         <class>10</class>
+         <gender>M</gender>
+         <id>10002</id>
+         <marks>400</marks>
+         <name>Mr B</name>
+      </row>
+      <row>
+         <class>10</class>
+         <gender>M</gender>
+         <id>10003</id>
+         <marks>501</marks>
+         <name>Mr C</name>
+      </row>
+      <row>
+         <class>10</class>
+         <gender>M</gender>
+         <id>10004</id>
+         <marks>700</marks>
+         <name>Mr D</name>
+      </row>
+      <row>
+         <class>10</class>
+         <gender>M</gender>
+         <id>10005</id>
+         <marks>900</marks>
+         <name>Mr E</name>
+      </row>
+   </studentRecords>
+</data>

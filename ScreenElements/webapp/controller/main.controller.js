@@ -10,9 +10,12 @@ sap.ui.define([
         onInit: function () {
             //1 - call method
             var oModel = oJsonModel.createJsonModel('./models/studentData.json');
-
+            var oModel2 = oJsonModel.createJsonModel('./models/studentData2.json');
+            
             //3 - set data at application 
-            this.oCore.setModel(oModel);
+            // this.oCore.setModel(oModel2);   //named model
+            this.oCore.setModel(oModel);   //named model
+            this.oCore.setModel(oModel2,'s2');  //named model
             // sap.ui.getCore().setModel(oModel);
 
             //3rd way displaying data
@@ -40,8 +43,19 @@ sap.ui.define([
         },
         onClick: function (oEvent) {
             debugger;
-            console.log( this.oCore.getModel().oData );
-
+            var oDefaultModel = this.oCore.getModel();
+            var oNamedtModel = this.oCore.getModel("s2");
+            this.oCore.setModel(oNamedtModel);
+            this.oCore.setModel(oDefaultModel, "s2");
+        },
+        onRowSelectionChange: function(oControllerEvent){
+            debugger;
+            //get absolute path 
+            var oAbsolutePath = oControllerEvent.getParameter("rowContext").getPath();
+            //get form refernce
+            var oForm = this.getView().byId("idForm2");
+            //from.rercner - to fill the data - element binding
+            oForm.bindElement(oAbsolutePath);
         }
     });
 });
